@@ -17,8 +17,12 @@
         {
 
             return pecas[linhas, colunas];
-
-
+        }
+        public void ColacarPeca(Peca p,Posicao pos) 
+        {
+            pecas[pos.linha, pos.coluna] = p;
+            p.posicao = pos;
+        
         }
     }
 }
